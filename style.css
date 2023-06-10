@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  line-height: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.one {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  color: hsl(0, 100%, 67%);
+}
+
+.two {
+  background-color: hsl(39, 100%, 56%, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+.three {
+  background-color: hsl(166, 100%, 37%, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+.four {
+  background-color: hsl(234, 85%, 45%, 0.05);
+  color: hsl(234, 85%, 45%);
+}
+
+.header {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+}
+
+.numbers {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 2rem 2.4rem 0.5rem;
+  font-size: 1rem;
+}
+
+.numbers p {
+  margin-top: 0.5rem;
+  color: rgba(240, 248, 255, 0.575);
+}
+
+.numbers span {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.result {
+  font-size: 1.2rem;
+  padding: 1.6rem;
+  color: rgba(240, 248, 255, 0.575);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 2.5rem 0 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: hsl(224, 30%, 27%);
+  margin: 1.2rem 1.8rem;
+}
+
+.info {
+  border-radius: 5px;
+  margin: 0 1.8rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.test-info {
+  font-size: 1rem;
+  padding: 0 3rem 2.5rem;
+  text-align: center;
+  color: rgba(240, 248, 255, 0.575);
+}
+
+.results {
+  font-weight: 800;
+  margin-left: auto;
+  color: hsl(224, 30%, 27%);
+}
+
+span {
+  color: rgba(45, 46, 48, 0.534);
+}
+
+button {
+  margin: 1.8rem;
+  padding: 1rem 0;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 4rem;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(222deg, 100%, 97%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 2rem 0 hsla(229, 6%, 66%, 0.397);
+    background-color: #fff;
+  }
+
+  .header {
+    border-radius: 2rem;
+    padding-top: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  h2 {
+    padding: 1.5rem 0 0 0;
+  }
+
+  .test-info {
+    padding: 0 3.5rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .numbers {
+    padding: 2.5rem 3rem;
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  .numbers p {
+    font-size: 1.3rem;
+  }
+
+  .numbers span {
+    font-size: 4.5rem;
+  }
+
+  button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+}
